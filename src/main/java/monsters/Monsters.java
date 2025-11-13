@@ -1,4 +1,4 @@
-package classes;
+package main.java.monsters;
 /*
  Represents a class Monsters with 
  */
