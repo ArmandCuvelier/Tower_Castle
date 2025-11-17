@@ -1,14 +1,12 @@
 import javafx.application.Application;
 import javafx.stage.Stage;
+import views.ViewsBegin;
 
-public class Main extends Application {
+public class Tower_Castle extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Tower Castle");
-        
-        primaryStage.setWidth(800);
-        primaryStage.setHeight(600);
+        primaryStage.setScene(new ViewsBegin(400,400).getScene());
         primaryStage.show();
     }
 

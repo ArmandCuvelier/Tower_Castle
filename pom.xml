@@ -30,13 +30,27 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/assets</directory>
+            </resource>
+            <resource>
+                <directory>src/main/assets</directory>
+                <targetPath>assets</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/style</directory>
+                <targetPath>style</targetPath>
+            </resource>
+        </resources>
+        
         <plugins>
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>Main</mainClass>
+                    <mainClass>Tower_Castle</mainClass>
                 </configuration>
             </plugin>
         </plugins>
