@@ -5,13 +5,13 @@ import javafx.stage.*;
 import views.ViewsBegin;
 import views.ViewsChoice;
 
-public class BeginControlleur {
+public class BeginController {
 
     Stage main_stage;
     ViewsBegin scene_begin;
     ViewsChoice scene_choice;
 
-    public BeginControlleur(Stage primaryStage){
+    public BeginController(Stage primaryStage){
 
         //Set the stage
         this.main_stage = primaryStage;

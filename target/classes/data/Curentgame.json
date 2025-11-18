@@ -1,0 +1,31 @@
+{
+    "name" : "",
+    "level" : null,
+    "monsters" :[
+        {
+            "hp" : null,
+            "atq" : null,
+            "def" : null,
+            "spd" : null,
+            "type" : null,
+            "talent" : ""
+        }
+    ],
+    "cards" :[
+        {
+            "nameCard" : ""
+        },
+        {
+            "nameCard" : ""
+        },
+        {
+            "nameCard" : ""
+        },
+        {
+            "nameCard" : ""
+        },
+        {
+            "nameCard" : ""
+        }
+    ]
+}
