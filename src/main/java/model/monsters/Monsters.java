@@ -1,4 +1,7 @@
 package model.monsters;
+
+import model.talent.Talent;
+
 /*
  Represents a class Monsters with 
  */
@@ -17,6 +20,9 @@ public abstract class Monsters {
 
     //Type will impact the stats of the monsters but more the weakness
     String type;
+
+    //Talent impact at a time the stats of the monsters
+    Talent talent;
     
     //Return the statistiques of the monster
     public double [] getStatistics(){
@@ -33,5 +39,9 @@ public abstract class Monsters {
     //Set the name of the monster
     public void setName(String name){
         this.name = name;
+    }
+
+    public void setTalent(Talent talent_def){
+        this.talent = talent_def;
     }
 }
