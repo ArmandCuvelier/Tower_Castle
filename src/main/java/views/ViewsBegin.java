@@ -23,7 +23,7 @@ public class ViewsBegin {
         URL logoUrl = getClass().getResource("/assets/pictures/Design.png");
         if (logoUrl != null) {
             Image logo = new Image(logoUrl.toExternalForm());
-            Canvas canvas = new Canvas(width/2, height/4);
+            Canvas canvas = new Canvas(width*0.8, height/2);
             GraphicsContext gc = canvas.getGraphicsContext2D();
             gc.drawImage(logo, 0, 0, canvas.getWidth(), canvas.getHeight());
             root.getChildren().add(canvas);

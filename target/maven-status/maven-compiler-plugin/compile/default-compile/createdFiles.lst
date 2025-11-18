@@ -1,6 +1,6 @@
+model\monsters\Air_Monsters.class
+views\ViewsBegin.class
 model\monsters\Monsters.class
 model\monsters\Aquatic_Monsters.class
-model\monsters\Air_Monsters.class
 model\monsters\Terrestrial_Monsters.class
 Tower_Castle.class
-views\ViewsBegin.class
