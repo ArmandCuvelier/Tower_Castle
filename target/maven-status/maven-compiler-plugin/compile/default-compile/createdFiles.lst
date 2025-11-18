@@ -4,4 +4,5 @@ views\ViewsBegin.class
 model\monsters\Monsters.class
 model\monsters\Aquatic_Monsters.class
 model\monsters\Terrestrial_Monsters.class
+controllers\BeginControlleur.class
 Tower_Castle.class

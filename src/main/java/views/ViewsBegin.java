@@ -13,7 +13,7 @@ public class ViewsBegin {
 
     private Scene scene_main;
 
-    public ViewsBegin(double width, double height){
+    public ViewsBegin(double width, double height,Button start_Button){
 
         //Set the root
         VBox root = new VBox();
@@ -32,10 +32,9 @@ public class ViewsBegin {
         }
 
         //Button start
-        Button start = new Button("Start the game");
-        start.setMaxHeight(height/8);
-        start.setMaxWidth(width/2);
-        root.getChildren().add(start);
+        start_Button.setMaxHeight(height/8);
+        start_Button.setMaxWidth(width/2);
+        root.getChildren().add(start_Button);
 
         //Set the scene
         this.scene_main = new Scene(root, width, height);
