@@ -1,5 +1,7 @@
 package model.talent;
 
+import model.Stats;
+
 public interface Talent {
 
     /*
@@ -13,6 +15,6 @@ public interface Talent {
 
     public String getTime();
 
-    public double[] effet_talent(double[] stats);
+    public void effet_talent(Stats stats);
 
 }

@@ -1,5 +1,7 @@
 package model.talent;
 
+import model.Stats;
+
 public class Passive implements Talent {
 
     /*
@@ -19,10 +21,9 @@ public class Passive implements Talent {
     }
 
     //Stats contains in order : atq,def,hp,speed of the monsters
-    public double[] effet_talent(double[] stats){
-        stats[1]+=1;
-        stats[2]+=1;
-        return stats;
+    public void effet_talent(Stats stats){
+        stats.setDef(stats.getDef()+1);;
+        stats.setHp(stats.getHp()+1);;
     }
 
 }

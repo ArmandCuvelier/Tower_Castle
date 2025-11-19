@@ -2,6 +2,8 @@ package model.monsters;
 
 import java.util.Random;
 
+import model.Stats;
+
 /*
  * Represents a Air Monster who herits of Monster
  * His type will be Air
@@ -19,10 +21,12 @@ public class Air_Monsters extends Monsters {
         this.type = "air";
         this.weakness = "aquatic";
 
-        this.atq = r.nextDouble(level_min+2,level_max+3);
-        this.hp = r.nextDouble(level_min,level_max);
-        this.speed = r.nextDouble(level_min+2,level_max+3);
-        this.def = r.nextDouble(level_min,level_max-4);
+        int atq = r.nextInt(level_min+2,level_max+3);
+        int hp = r.nextInt(level_min,level_max);
+        int speed = r.nextInt(level_min+2,level_max+3);
+        int def = r.nextInt(level_min,level_max-4);
+
+        this.statistiques = new Stats(hp, atq, def, speed);
     }
 
 }

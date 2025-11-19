@@ -1,5 +1,7 @@
 package model.talent;
 
+import model.Stats;
+
 public class Agressive implements Talent {
 
     /*
@@ -19,9 +21,8 @@ public class Agressive implements Talent {
     }
 
     //Stats contains in order : atq,def,hp,speed of the monsters
-    public double[] effet_talent(double[] stats){
-        stats[0]+=2;
-        return stats;
+    public void effet_talent(Stats stats){
+        stats.setAtq(stats.getAtq()+1);
     }
 
 }

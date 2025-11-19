@@ -1,5 +1,7 @@
 package model.talent;
 
+import model.Stats;
+
 public class Flash implements Talent {
 
     /*
@@ -20,10 +22,9 @@ public class Flash implements Talent {
     }
 
     //Stats contains in order : atq,def,hp,speed of the monsters
-    public double[] effet_talent(double[] stats){
-        stats[3]+=3;
-        stats[2]-=1;
-        return stats;
+    public void effet_talent(Stats stats){
+        stats.setSpd(stats.getSpd()+3);
+        stats.setHp(stats.getHp()-1);
     }
 
 }

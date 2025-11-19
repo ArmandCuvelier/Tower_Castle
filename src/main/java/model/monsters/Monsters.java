@@ -1,5 +1,6 @@
 package model.monsters;
 
+import model.Stats;
 import model.talent.Talent;
 
 /*
@@ -9,10 +10,7 @@ public abstract class Monsters {
 
     //Information of the monsters
     
-    double atq;
-    double def;
-    double hp;
-    double speed;
+    Stats statistiques;
 
     String name;
 
@@ -23,12 +21,6 @@ public abstract class Monsters {
 
     //Talent impact at a time the stats of the monsters
     Talent talent;
-    
-    //Return the statistiques of the monster
-    public double [] getStatistics(){
-        double [] statistiques = {atq,def,hp,speed};
-        return statistiques;
-    }
 
     //Return the informations of the monster
     public String [] getInformations(){
