@@ -10,17 +10,17 @@ public abstract class Monsters {
 
     //Information of the monsters
     
-    Stats statistiques;
+    protected Stats statistiques;
 
-    String name;
+    protected String name;
 
-    String weakness;
+    protected String weakness;
 
     //Type will impact the stats of the monsters but more the weakness
-    String type;
+    protected String type;
 
     //Talent impact at a time the stats of the monsters
-    Talent talent;
+    protected Talent talent;
 
     //Return the informations of the monster
     public String [] getInformations(){
@@ -35,5 +35,13 @@ public abstract class Monsters {
 
     public void setTalent(Talent talent_def){
         this.talent = talent_def;
+    }
+
+    public Stats getStatistiques(){
+        return this.statistiques;
+    }
+
+    public void setStatistiques(Stats statistiques){
+        this.statistiques = statistiques;
     }
 }
