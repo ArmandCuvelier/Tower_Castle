@@ -8,10 +8,14 @@ import views.ViewsChoice;
 public class BeginController {
 
     Stage main_stage;
+    DatasController datas;
     ViewsBegin scene_begin;
     ViewsChoice scene_choice;
 
     public BeginController(Stage primaryStage){
+
+        //Set the controllers
+        this.datas = new DatasController();
 
         //Set the stage
         this.main_stage = primaryStage;

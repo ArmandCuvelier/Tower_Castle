@@ -3,6 +3,7 @@ package model.monsters;
 import java.util.Random;
 
 import model.Stats;
+import model.talent.Talent;
 
 /*
  * Represents a Aquatic Monster who herits of Monster
@@ -28,5 +29,13 @@ public class Terrestrial_Monsters extends Monsters {
 
         this.statistiques = new Stats(hp, atq, def, speed);
     }
+
+    public Terrestrial_Monsters(Stats statistiques,String name, Talent talent){
+        this.statistiques = statistiques;
+        this.name = name;
+        this.talent = talent;
+        this.weakness = "air";
+    }
+
 
 }

@@ -13,19 +13,24 @@
     ],
     "cards" :[
         {
-            "nameCard" : ""
+            "nameCard" : "",
+            "rarity" : null
         },
         {
-            "nameCard" : ""
+            "nameCard" : "",
+            "rarity" : null
         },
         {
-            "nameCard" : ""
+            "nameCard" : "",
+            "rarity" : null
         },
         {
-            "nameCard" : ""
+            "nameCard" : "",
+            "rarity" : null
         },
         {
-            "nameCard" : ""
+            "nameCard" : "",
+            "rarity" : null
         }
     ]
 }

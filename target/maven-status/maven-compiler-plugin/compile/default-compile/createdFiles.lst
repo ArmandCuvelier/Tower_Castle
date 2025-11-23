@@ -1,4 +1,5 @@
 model\monsters\Air_Monsters.class
+controllers\GameController.class
 controllers\DatasController.class
 model\Stats.class
 model\cards\Hares.class

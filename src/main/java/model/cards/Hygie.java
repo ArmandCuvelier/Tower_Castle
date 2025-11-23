@@ -34,6 +34,12 @@ public class Hygie extends Cards{
         }
     }
 
+    public Hygie(int rarity, boolean isDirectRarity){
+        this.name = "Hares";
+        this.type = "assets";
+        this.rarity = rarity;
+    }
+
     //The bonus of hp depends of the rarity
     @Override
     public void geteffet(Monsters monsters, int level){

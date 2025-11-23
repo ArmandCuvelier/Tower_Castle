@@ -45,6 +45,9 @@
                 <targetPath>assets</targetPath>
             </resource>
             <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+            <resource>
                 <directory>src/main/style</directory>
                 <targetPath>style</targetPath>
             </resource>
