@@ -1,17 +1,18 @@
 package controllers;
 
-import java.util.Hashtable;
+import org.json.JSONArray;
 
 public class DatasController {
 
     //records contains the 3 best game in order by level
-    private Hashtable records ;
+    private JSONArray records ;
 
     //currentGame contains the information about the player, his monster (stats,talents,type) and his cards
-    private Hashtable currentGame ;
+    private JSONArray currentGame ;
 
     public DatasController(){
-        this.records = new Hashtable<>(3);
-        this.currentGame = new Hashtable<>();
+        this.records = new JSONArray(3);
+        this.currentGame = new JSONArray();
     }
+
 }
