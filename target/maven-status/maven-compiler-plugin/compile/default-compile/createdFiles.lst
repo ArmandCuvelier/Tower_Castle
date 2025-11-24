@@ -6,6 +6,7 @@ model\Stats.class
 model\cards\Hares.class
 model\cards\Cards.class
 model\monsters\Aquatic_Monsters.class
+controllers\ChoiceController.class
 model\talent\Talent.class
 controllers\BeginController.class
 Tower_Castle.class

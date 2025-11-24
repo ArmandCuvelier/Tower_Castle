@@ -6,7 +6,7 @@ public class Tower_Castle extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        new BeginController(primaryStage).show_Begin_View();
+        new BeginController(primaryStage).show_View();
     }
 
     public static void main(String[] args) {
