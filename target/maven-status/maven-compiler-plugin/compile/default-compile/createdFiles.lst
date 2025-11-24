@@ -1,3 +1,4 @@
+model\factory\TalentFactory.class
 model\monsters\Air_Monsters.class
 controllers\GameController.class
 controllers\DatasController.class
@@ -8,6 +9,7 @@ model\monsters\Aquatic_Monsters.class
 model\talent\Talent.class
 controllers\BeginController.class
 Tower_Castle.class
+model\factory\CardsFactory.class
 views\ViewsChoice.class
 controllers\TalentController.class
 model\talent\Flash.class
@@ -17,3 +19,4 @@ views\ViewsBegin.class
 model\monsters\Monsters.class
 model\monsters\Terrestrial_Monsters.class
 model\cards\Hygie.class
+model\factory\MonstersFactory.class

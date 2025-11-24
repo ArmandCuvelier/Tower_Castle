@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 import model.Stats;
 import model.cards.Cards;
-import model.monsters.Aquatic_Monsters;
+import model.factory.MonstersFactory;
 import model.monsters.Monsters;
-import model.monsters.Terrestrial_Monsters;
 import model.talent.Talent;
 
 public class GameController {
@@ -19,42 +18,14 @@ public class GameController {
 
     public GameController(String choix){
         this.level=0;
-        switch (choix) {
-
-            case "aquatic":
-                this.monsters = new Aquatic_Monsters(level+10, level);
-                break;
-
-            case "terrestrial":
-                this.monsters = new Terrestrial_Monsters(level+10, level);
-                break;
-
-            case "air":
-                this.monsters = new Terrestrial_Monsters(level+10, level);
-                break;
-
-            default:
-                break;
-        }
+        this.monsters = new MonstersFactory().getNewMonsters(choix, this.level);
         new TalentController(this.monsters);
     }
 
     public GameController(String type,String name, Talent talent, Stats stats, int level, ArrayList<Cards> cards_game){
         this.level = level;
         this.cards = cards_game;
-        switch (type) {
-            case "aquatic":
-                this.monsters = new Aquatic_Monsters(stats,name,talent);
-                break;
-
-            case "terrestrial":
-                this.monsters = new Terrestrial_Monsters(stats,name,talent);
-                break;
-
-            case "air":
-                this.monsters = new Terrestrial_Monsters(stats,name,talent);
-                break;
-        }
+        this.monsters = new MonstersFactory().getMonsters(type, stats, talent, name);
     }
 
     public GameController(Monsters monsters, int level, ArrayList<Cards> cards_game){
