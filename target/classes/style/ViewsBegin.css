@@ -1,8 +1,14 @@
 .button {
     -fx-font-family: 'Courier New', Courier, monospace;
-    -fx-color : #2147d1;
+    -fx-background-color : transparent;
+    -fx-pref-width : 250px;
+}
+
+.button:hover{
+    -fx-font-weight : bold;
+    -fx-pref-width : 280px;
 }
 
 .root {
-    -fx-background-color: #4566da;
+    -fx-background-color: linear-gradient(#4566da,#7e91d4);
 }

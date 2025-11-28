@@ -3,8 +3,10 @@ package controllers;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import views.ViewsChoice;
@@ -25,23 +27,27 @@ public class ChoiceController {
         this.main_stage.setTitle("Tower Castle");
 
         //Set the records in function of the data from the datacontroller
-        HBox records_part = new HBox();
+        VBox records_part = new VBox(10);
+        records_part.setAlignment(Pos.CENTER);
 
         JSONArray records_data = this.datas.getRecords();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < records_data.length() && i < 3; i++) {
 
             JSONObject records = records_data.getJSONObject(i);
-            Text name_record = new Text();
-            Text level = new Text();
-
+            
             if (!records.isNull("name")){
-                name_record.setText(records.getString("name"));
-                String level_int = records.getInt("level") + "";
-                level.setText(level_int);
+                HBox record_line = new HBox(30);
+                record_line.setAlignment(Pos.CENTER);
+                
+                Text name_record = new Text(records.getString("name"));
+                name_record.getStyleClass().add("name");
+                
+                Text level = new Text(String.valueOf(records.getInt("level")));
+                level.getStyleClass().add("level");
+                
+                record_line.getChildren().addAll(name_record, level);
+                records_part.getChildren().add(record_line);
             }
-
-            records_part.getChildren().add(name_record);
-            records_part.getChildren().add(level);
         }
 
         //Set the button to start a game
