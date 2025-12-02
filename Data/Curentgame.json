@@ -1,0 +1,38 @@
+{
+    "cards": [
+        {
+            "nameCard": "",
+            "rarity": 0
+        },
+        {
+            "nameCard": "",
+            "rarity": 0
+        },
+        {
+            "nameCard": "",
+            "rarity": 0
+        },
+        {
+            "nameCard": "",
+            "rarity": 0
+        },
+        {
+            "nameCard": "",
+            "rarity": 0
+        },
+        {
+            "nameCard": "",
+            "rarity": 0
+        }
+    ],
+    "level": 0,
+    "name": "",
+    "monsters": [{
+        "def": 0,
+        "spd": 0,
+        "talent": "",
+        "hp": 0,
+        "type": "",
+        "atq": 0
+    }]
+}
