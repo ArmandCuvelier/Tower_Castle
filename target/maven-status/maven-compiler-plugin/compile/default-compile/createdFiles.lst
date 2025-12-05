@@ -16,6 +16,7 @@ controllers\TalentController.class
 model\talent\Flash.class
 model\talent\Agressive.class
 model\talent\Passive.class
+views\ViewsCreate.class
 views\ViewsBegin.class
 model\monsters\Monsters.class
 model\monsters\Terrestrial_Monsters.class
