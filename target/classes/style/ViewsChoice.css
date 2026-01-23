@@ -25,3 +25,9 @@
 .root {
     -fx-background-color: linear-gradient(#4566da,#7e91d4);
 }
+
+#records_root {
+    -fx-border-color : #ffffff;
+    -fx-border-radius : 5px;
+    -fx-border-width : 3px;
+}

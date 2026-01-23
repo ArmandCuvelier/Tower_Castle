@@ -23,7 +23,9 @@ public class ViewsChoice {
 
             //Section of the records
             VBox records_root = new VBox(20);
+            records_root.setId("records_root");
             records_root.setAlignment(Pos.CENTER);
+            records_root.setPadding(new Insets(10, 10, 10,10));
 
             Text titre_records = new Text("RECORDS");
             titre_records.getStyleClass().add("title");

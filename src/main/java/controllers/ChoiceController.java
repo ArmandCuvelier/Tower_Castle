@@ -30,11 +30,13 @@ public class ChoiceController {
         VBox records_part = new VBox(10);
         records_part.setAlignment(Pos.CENTER);
 
+        //Get the records
         JSONArray records_data = this.datas.getRecords();
         for (int i = 0; i < records_data.length() && i < 3; i++) {
 
             JSONObject records = records_data.getJSONObject(i);
             
+            //Show the records if there is some records
             if (!records.isNull("name")){
                 HBox record_line = new HBox(30);
                 record_line.setAlignment(Pos.CENTER);

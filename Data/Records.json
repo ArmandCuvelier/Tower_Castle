@@ -1,14 +1,14 @@
 {
     "record3": {
-        "level": 0,
-        "name": null
+        "level": 10,
+        "name": "TestRecords20"
     },
     "record2": {
-        "level": 0,
-        "name": null
+        "level": 100,
+        "name": "TestRecords2"
     },
     "record1": {
-        "level": 10000,
+        "level": 1000,
         "name": "TestRecords"
     }
 }
