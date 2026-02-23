@@ -63,18 +63,30 @@ public class ChoiceController {
 
         //Set the button to reset the actual game
         Button reset = new Button("Reset the Game");
+        reset.setOnAction(e -> datas.reset_game());
 
         //Set the button to exit
         Button exit = new Button("Exit");
+        exit.setOnAction(e -> exit());
 
         //Set the views and his actions
         this.scene = new ViewsChoice(400,400,records_part,start,reset,exit);
 
     }
 
+    //Close the stage
+    public void exit(){
+        this.main_stage.close();
+    }
+
     public void show_Views(){
         this.main_stage.setScene(this.scene.getScene());
         this.main_stage.show();
+    }
+
+    //Launch the game
+    public void show_monsters(){
+        //this.main_stage.setScene();
     }
 
 }
